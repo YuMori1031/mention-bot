@@ -16,6 +16,7 @@ bot.on("messageCreate", async (message) => {
   if (message.author.bot) return;
 
   if (message.author.id === MY_ID) {
+    console.log("送信メッセージ内容:", `${message.content} <@${TARGET_ID}>`);
     await message.channel.send(`${message.content} <@${TARGET_ID}>`);
   } else if (message.author.id === TARGET_ID) {
     await message.channel.send(`${message.content} <@${MY_ID}>`);
