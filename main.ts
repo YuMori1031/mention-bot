@@ -23,6 +23,4 @@ bot.on("messageCreate", async (message) => {
   }
 });
 
-await bot.connect(TOKEN, {
-  intents: ["Guilds", "GuildMessages", "MessageContent"],
-});
+await bot.connect(TOKEN, ["Guilds", "GuildMessages", "MessageContent"]);
