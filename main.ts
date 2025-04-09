@@ -23,3 +23,4 @@ bot.on("messageCreate", async (message) => {
 });
 
 await bot.connect(TOKEN, ["Guilds", "GuildMessages", "MessageContent"]);
+// 再デプロイ用の変更
